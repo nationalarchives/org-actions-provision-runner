@@ -1,0 +1,15 @@
+name: Provision Runner
+description: Provisions GitHub Actions runner with security tools
+
+inputs:
+  wiz-sensor-token:
+    description: "JSON token containing registry credentials and Wiz API client credentials"
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Start Wiz Sensor
+      uses: wiz-sec-public/wiz-sensor-github-action@ce0c5fb948754fd3224f49611c8dc8f506d271d1 # v0.9.5
+      with:
+        token: ${{ inputs.wiz-sensor-token }}
