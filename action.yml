@@ -1,5 +1,5 @@
 name: Provision Runner
-description: Provisions GitHub Actions runner with security tools
+description: Provisions GitHub Actions runner with security tools.
 
 inputs:
   wiz-sensor-token:
