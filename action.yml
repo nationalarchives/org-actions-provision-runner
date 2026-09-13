@@ -10,6 +10,6 @@ runs:
   using: composite
   steps:
     - name: Start Wiz Sensor
-      uses: wiz-sec-public/wiz-sensor-github-action@ce0c5fb948754fd3224f49611c8dc8f506d271d1 # v0.9.5
+      uses: wiz-sec-public/wiz-sensor-github-action@2fd38e4d101f185b1deb0c313c0adb0a7efdfe62 # v0.9.6
       with:
         token: ${{ inputs.wiz-sensor-token }}
